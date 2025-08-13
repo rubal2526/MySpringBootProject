@@ -24,5 +24,4 @@ public class MySpringBoot3ProjectApplication {
     public String hello() {
         return "Hello SpringBoot";
     }
-
 }
