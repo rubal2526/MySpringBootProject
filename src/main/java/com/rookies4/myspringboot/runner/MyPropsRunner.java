@@ -37,18 +37,18 @@ public class MyPropsRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         logger.debug("Logger 구현객체명 = {}", logger.getClass().getName());
 
-        System.out.println("현재 활성화된 CustomVO Bean = " + custom);
+        logger.info("현재 활성화된 CustomVO Bean = {}", custom);
 
-        System.out.println("MyBootProperties.getName() = " + properties.getName());
-        System.out.println("MyBootProperties.getAge() = " + properties.getAge());
-        System.out.println("MyBootProperties.getFullName() = " + properties.getFullName());
+        logger.info("MyBootProperties.getName() = {}", properties.getName());
+        logger.info("MyBootProperties.getAge() = {}", properties.getAge());
+        logger.info("MyBootProperties.getFullName() = {}", properties.getFullName());
 
-        System.out.println("Properties myboot.name = " + name);
-        System.out.println("Properties myboot.age = " + age);
-        System.out.println("Properties myboot.fullName = " + environment.getProperty("myboot.fullName"));
+        logger.info("Properties myboot.name = {}", name);
+        logger.info("Properties myboot.age = {}", age);
+        logger.info("Properties myboot.fullName = {}", environment.getProperty("myboot.fullName"));
 
-        System.out.println("VM Arguments = " + args.containsOption("foo")); //false
-        System.out.println("Program Arguments = " + args.containsOption("bar")); // true
+        logger.debug("VM Arguments = {}", args.containsOption("foo")); //false
+        logger.debug("Program Arguments = {}", args.containsOption("bar")); // true
 
         //Program Argument의 모든 이름을 출력하기
         for(String argName: args.getOptionNames()){
@@ -61,12 +61,12 @@ public class MyPropsRunner implements ApplicationRunner {
         args.getOptionNames().forEach(new Consumer<String>() {
             @Override
             public void accept(String s) {
-                System.out.println("Inner Class 아규먼트 = " + s);
+                logger.debug("Inner Class 아규먼트 = {}", s);
             }
         });
         System.out.println("===> 람다함수");
         //2. 함수형 인터페이스 (람다 함수)
-        args.getOptionNames().forEach(name -> System.out.println(name));
+        args.getOptionNames().forEach(name -> logger.debug(name));
         System.out.println("===> Method Reference");
         //3. Method Reference (야규먼트를 생략한 람다함수)
         args.getOptionNames().forEach(System.out::println);
