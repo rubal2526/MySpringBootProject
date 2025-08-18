@@ -26,24 +26,34 @@ public class UserRestController {
 
     //등록
     @PostMapping
-    public UserEntity create(@RequestBody UserEntity user) {
+    public UserEntity create(@RequestBody UserEntity user){
         return userRepository.save(user);
     }
 
-    //전체목록
+    //전체목록 조회
     @GetMapping
     public List<UserEntity> getUsers() {
         return userRepository.findAll();
     }
-
     //ID로 조회
     @GetMapping("/{id}")
-    public UserEntity getUser(@PathVariable Long id) {
+    public UserEntity getUser(@PathVariable Long id){
         Optional<UserEntity> optionalUser = userRepository.findById(id);
-        //orElseThrow(supplier) Supplier의 추상메서드 T get()
+        //orElseThrow(Supplier) Supplier의 추상메서드 T get()
         UserEntity existUser = optionalUser
                 .orElseThrow(() -> new BusinessException("User Not Found", HttpStatus.NOT_FOUND));
         return existUser;
+    }
+    //Email로 조회하고, 수정
+    @PatchMapping("/{email}")
+    public UserEntity updateUser(@PathVariable String email, @RequestBody UserEntity userDetail){
+        UserEntity existUser = userRepository.findByEmail(email) //Optional<UserEntity>
+                .orElseThrow(() -> new BusinessException("User Not Found", HttpStatus.NOT_FOUND));
+        //name 변경
+        existUser.setName(userDetail.getName());
+        //DB에 저장
+        UserEntity updateUser = userRepository.save(existUser);
+        return updateUser;
     }
 
 }
