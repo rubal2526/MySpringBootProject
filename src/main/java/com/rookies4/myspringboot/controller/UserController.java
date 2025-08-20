@@ -21,7 +21,8 @@ public class UserController {
     private final UserRepository userRepository;
 
     @GetMapping("/users/edit/{id}")
-    public String showUpdateForm(@PathVariable("id") long id, Model model) {
+    public String showUpdateForm(@PathVariable("id") long id,
+                                 Model model) {
         UserEntity user = userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("user", user);
@@ -29,15 +30,15 @@ public class UserController {
     }
     @PostMapping("/users/update/{id}")
     public String updateUser(@PathVariable("id") long id,
-                             @Valid @ModelAttribute("user") UserEntity user, BindingResult result) {
+                             @Valid @ModelAttribute("user") UserEntity user,
+                             BindingResult result) {
         if (result.hasErrors()) {
             user.setId(id);
             return "update-user";
         }
         userRepository.save(user);
-        return "redirect:/index";
+        return "redirect:/users/index";
     }
-
 
     @GetMapping("/users/signup")
     public String showSignUpForm(@ModelAttribute("user") UserEntity user) {
