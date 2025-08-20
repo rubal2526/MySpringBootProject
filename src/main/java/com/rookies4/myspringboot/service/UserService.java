@@ -20,7 +20,7 @@ public class UserService {
 
     //User 등록
     @Transactional
-    public final UserDTO.UserResponse createUser(UserDTO.UserCreateRequest request) {
+    public UserDTO.UserResponse createUser(UserDTO.UserCreateRequest request) {
         //Email이 중복되면 BizException 발생 시키고 종료
         userRepository.findByEmail(request.getEmail()) //Optional<UserEntity>
                 .ifPresent(entity -> {
@@ -34,7 +34,7 @@ public class UserService {
     }
 
     //Id로 User 조회하기
-    public UserDTO.UserResponse getUserById(Long id) {
+    public UserDTO.UserResponse getUserById(Long id){
         UserEntity userEntity = getUserExist(id);
         return new UserDTO.UserResponse(userEntity);
     }
@@ -43,12 +43,12 @@ public class UserService {
     public List<UserDTO.UserResponse> getAllUsers() {
         //List<UserEntity> => List<UserDTO.UserResponse>
         //Level1
-//        userRepository.findAll() //List<UserEntity>
+//        return userRepository.findAll() //List<UserEntity>
 //                .stream() //Stream<UserEntity>
 //                .map(entity -> new UserDTO.UserResponse(entity)) //Stream<UserDTO.UserResponse>
 //                .collect(Collectors.toList()); //List<UserDTO.UserResponse>
         //Level2
-        return userRepository.findAll()
+        return  userRepository.findAll()
                 .stream()
                 .map(UserDTO.UserResponse::new)
                 .toList();
@@ -57,7 +57,7 @@ public class UserService {
     //User 수정
     @Transactional
     public UserDTO.UserResponse updateUser(String email,
-                                           UserDTO.UserUpdateRequest request) {
+                                           UserDTO.UserUpdateRequest request){
         UserEntity existUser = userRepository.findByEmail(email)
                 .orElseThrow(() -> new BusinessException("User Not Found", HttpStatus.NOT_FOUND));
         //dirty read ( setter 메서드만 호출하고, save() 메서드는 호출하지 않아도 됨)
@@ -66,13 +66,13 @@ public class UserService {
     }
     //User 삭제
     @Transactional
-    public void deleteUser(Long id) {
+    public void deleteUser(Long id){
         UserEntity userEntity = getUserExist(id);
         userRepository.delete(userEntity);
     }
 
     //내부 Helper Method
-    private UserEntity getUserExist(Long id) {
+    private UserEntity getUserExist(Long id){
         return userRepository.findById(id)
                 .orElseThrow(() -> new BusinessException("User Not Found", HttpStatus.NOT_FOUND));
     }

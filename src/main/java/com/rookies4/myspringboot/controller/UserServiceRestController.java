@@ -18,12 +18,12 @@ public class UserServiceRestController {
     @PostMapping
     public ResponseEntity<UserDTO.UserResponse> create(
             @Valid @RequestBody UserDTO.UserCreateRequest request) {
-        UserDTO.UserResponse createUser = userService.createUser(request);
-        return ResponseEntity.ok(createUser);
+        UserDTO.UserResponse createdUser = userService.createUser(request);
+        return ResponseEntity.ok(createdUser);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<UserDTO.UserResponse> getUserById(@PathVariable Long id) {
+    public ResponseEntity<UserDTO.UserResponse> getUserById(@PathVariable Long id){
         UserDTO.UserResponse userById = userService.getUserById(id);
         return ResponseEntity.ok(userById);
     }
@@ -33,10 +33,16 @@ public class UserServiceRestController {
         return ResponseEntity.ok(userService.getAllUsers());
     }
 
-    @PatchMapping("/{email}")
+    @PatchMapping("/{email}/")
     public ResponseEntity<UserDTO.UserResponse> updateUser(@PathVariable String email,
-                                                           @Valid @RequestBody UserDTO.UserUpdateRequest request) {
-        return ResponseEntity.ok(userService.updateUser(email, request));
+                                                           @Valid @RequestBody UserDTO.UserUpdateRequest request){
+        return ResponseEntity.ok(userService.updateUser(email,request));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteUser(@PathVariable Long id){
+        userService.deleteUser(id);
+        return ResponseEntity.noContent().build();
     }
 
 }
