@@ -19,7 +19,7 @@ public class MyPropsRunner implements ApplicationRunner {
     private String name;
 
     @Value("${myboot.age}")
-    private String age;
+    private int age;
 
     @Autowired
     private Environment environment;
@@ -30,14 +30,14 @@ public class MyPropsRunner implements ApplicationRunner {
     @Autowired
     private CustomVO custom;
 
-    //logger 객체 생성
+    //Logger 객체생성
     private Logger logger = LoggerFactory.getLogger(MyPropsRunner.class);
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         logger.debug("Logger 구현객체명 = {}", logger.getClass().getName());
 
-        logger.info("현재 활성화된 CustomVO Bean = {}", custom);
+        logger.info("현재 활성화된 CustomerVO Bean = {}", custom);
 
         logger.info("MyBootProperties.getName() = {}", properties.getName());
         logger.info("MyBootProperties.getAge() = {}", properties.getAge());
@@ -48,27 +48,28 @@ public class MyPropsRunner implements ApplicationRunner {
         logger.info("Properties myboot.fullName = {}", environment.getProperty("myboot.fullName"));
 
         logger.debug("VM Arguments = {}", args.containsOption("foo")); //false
-        logger.debug("Program Arguments = {}", args.containsOption("bar")); // true
-
+        logger.debug("Program Arguments = {}", args.containsOption("bar")); //true
+        
         //Program Argument의 모든 이름을 출력하기
         for(String argName: args.getOptionNames()){
-            System.out.println("아규먼트 = " + argName);
+            System.out.println("아규먼트 이름 = " + argName);
         }
-        //args.getOptionNames() 의 리턴 타입 Ser<String>
+        //args.getOptionNames() 의 리턴타입 Set<String>
         //Iterable의 foreach(Consumer) 메서드 호출하기
         //Consumer의 추상메서드 void accept(T t)
         //1. 익명의 Inner class ( Anonymous Inner Class)
         args.getOptionNames().forEach(new Consumer<String>() {
             @Override
             public void accept(String s) {
-                logger.debug("Inner Class 아규먼트 = {}", s);
+                logger.debug("Inner Class 아규먼트 이름 =  = {}", s);
             }
         });
         System.out.println("===> 람다함수");
-        //2. 함수형 인터페이스 (람다 함수)
+        //2. 함수형 인터페이스 (람다함수)
         args.getOptionNames().forEach(name -> logger.debug(name));
         System.out.println("===> Method Reference");
-        //3. Method Reference (야규먼트를 생략한 람다함수)
+        //3. Method Reference (아규먼트를 생략한 람다함수)
+        //args.getOptionNames().forEach(System.out::println);
         args.getOptionNames().forEach(System.out::println);
 
     }

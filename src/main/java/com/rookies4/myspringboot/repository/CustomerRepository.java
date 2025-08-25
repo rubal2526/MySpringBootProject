@@ -9,8 +9,6 @@ import java.util.Optional;
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
     //customerId로 조회하는 Query Method 선언하기
     Optional<Customer> findByCustomerId(String customerId);
-    //customerName으로 조회하는 Query Method 선언하가
+    //customerName으로 조회하는 Query Method 선언하기
     List<Customer> findByCustomerNameContains(String customerName);
-
-
 }

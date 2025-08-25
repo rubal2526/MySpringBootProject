@@ -23,7 +23,7 @@ class CustomerRepositoryTest {
 
     @Test
     //@Rollback(value = false) //Rollback 처리하지 마세요!!
-    void testUpdateCustomer() {
+    void testUpdateCustomer(){
         Customer customer =
                 customerRepository.findByCustomerId("AC001")
                         .orElseThrow(() -> new RuntimeException("Customer Not Found"));
@@ -40,27 +40,28 @@ class CustomerRepositoryTest {
                         .orElseThrow(() -> new RuntimeException("Customer Not Found"));
     }
 
-    @Test
-    @Disabled
+
+    @Test @Disabled
     //Customer 조회
     void testFindCustomer() {
         //findById() 호출
         Optional<Customer> customerById = customerRepository.findById(1L);
         //assertThat(customerById).isNotEmpty();
         //assertThat(customerById).isEmpty();
-        if(customerById.isPresent()) {
+        if(customerById.isPresent()){
             Customer existCustomer = customerById.get();
             assertThat(existCustomer.getId()).isEqualTo(1L);
         }
 
         //Optional의 T orElseGet(Supplier) 고객번호(AC001)가 존재하는 경우
-        //Supplier의 추상 메서드 T get()
+        //Supplier의 추상메서드 T get()
         Optional<Customer> customerByCustomerId = customerRepository.findByCustomerId("AC001");
         Customer ac001Customer = customerByCustomerId.orElseGet(() -> new Customer());
         assertThat(ac001Customer.getCustomerName()).isEqualTo("스프링부트");
 
         //고객번호(AC003)가 존재하지 않는 경우
-        Customer notFoundCustomer = customerRepository.findByCustomerId("AC003").orElseGet(() -> new Customer());
+        Customer notFoundCustomer =
+                customerRepository.findByCustomerId("AC003").orElseGet(() -> new Customer());
         assertThat(notFoundCustomer.getCustomerName()).isNull();
     }
 
