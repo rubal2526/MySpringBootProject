@@ -1,4 +1,5 @@
 package com.rookies4.myspringboot.exception;//ErrorCode enum 상수정의
+
 import org.springframework.http.HttpStatus;
 
 import lombok.Getter;
