@@ -14,4 +14,3 @@ public class MyBootProperties {
     private String fullName;
 
 }
-

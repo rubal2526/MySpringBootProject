@@ -44,6 +44,7 @@ public class StudentDTO {
         @Size(max = 20, message = "Phone number cannot exceed 20 characters")
         private String phoneNumber;
 
+        @NotBlank(message = "Email is required")
         @Size(max = 100, message = "Email cannot exceed 100 characters")
         private String email;
 

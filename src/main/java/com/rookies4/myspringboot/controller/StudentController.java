@@ -24,14 +24,14 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<StudentDTO.Response> getStudentById(
-            @PathVariable Long id) {
+    public ResponseEntity<StudentDTO.Response> getStudentById(@PathVariable Long id) {
         StudentDTO.Response student = studentService.getStudentById(id);
         return ResponseEntity.ok(student);
     }
 
     @GetMapping("/number/{studentNumber}")
-    public ResponseEntity<StudentDTO.Response> getStudentByStudentNumber(@PathVariable String studentNumber) {
+    public ResponseEntity<StudentDTO.Response> getStudentByStudentNumber(
+            @PathVariable String studentNumber) {
         StudentDTO.Response student = studentService.getStudentByStudentNumber(studentNumber);
         return ResponseEntity.ok(student);
     }
