@@ -11668,3 +11668,103 @@ Caused by: java.nio.channels.ClosedChannelException
 2025-08-27T14:46:20.400+09:00  INFO 2568 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-27T14:46:20.403+09:00  INFO 2568 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2025-08-27T14:46:20.406+09:00  INFO 2568 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-08-28T16:00:25.377+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 10304 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T16:00:25.382+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T16:00:25.419+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-28T16:00:25.419+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-28T16:00:26.216+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T16:00:26.273+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2025-08-28T16:00:26.862+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T16:00:26.875+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T16:00:26.876+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T16:00:26.917+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T16:00:26.918+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+2025-08-28T16:00:27.114+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T16:00:27.167+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T16:00:27.194+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T16:00:27.411+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T16:00:27.435+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-08-28T16:00:27.515+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@451d1c8b
+2025-08-28T16:00:27.516+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-08-28T16:00:27.535+09:00  WARN 10304 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T16:00:27.549+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T16:00:28.167+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T16:00:28.247+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:00:28.410+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T16:00:28.850+09:00  WARN 10304 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T16:00:28.861+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T16:00:29.358+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T16:00:29.386+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T16:00:29.390+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T16:00:29.440+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T16:00:29.450+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 4.452 seconds (process running for 7.037)
+2025-08-28T16:00:29.483+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T16:00:29.484+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T16:00:29.484+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T16:00:29.484+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T16:00:29.484+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T16:00:29.485+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T16:00:29.485+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 42
+2025-08-28T16:00:29.485+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T16:00:29.485+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T16:00:29.486+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 33
+2025-08-28T16:00:29.486+09:00  INFO 10304 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T16:00:29.597+09:00  WARN 10304 --- [MySpringBoot3Project] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=MySpringBoot3Project, managementUrl=http://14.58.80.188:8080/actuator, healthUrl=http://14.58.80.188:8080/actuator/health, serviceUrl=http://14.58.80.188:8080/) at spring-boot-admin ([http://localhost:8090/instances]): I/O error on POST request for "http://localhost:8090/instances": null. Further attempts are logged on DEBUG level
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8090/instances": null
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:697) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:582) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:533) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:814) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:758) ~[spring-web-6.2.8.jar:6.2.8]
+	at de.codecentric.boot.admin.client.registration.RestClientRegistrationClient.register(RestClientRegistrationClient.java:45) ~[spring-boot-admin-client-3.4.7.jar:3.4.7]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:80) ~[spring-boot-admin-client-3.4.7.jar:3.4.7]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:61) ~[spring-boot-admin-client-3.4.7.jar:3.4.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-6.2.8.jar:6.2.8]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	... 3 more
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183) ~[java.net.http:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[?:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	... 3 more
+
+2025-08-28T16:00:32.762+09:00  INFO 10304 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T16:00:32.762+09:00  INFO 10304 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-28T16:00:32.763+09:00  INFO 10304 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-08-28T16:26:17.654+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T16:26:17.801+09:00  INFO 10304 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T16:26:17.807+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:26:17.809+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-08-28T16:26:17.812+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
