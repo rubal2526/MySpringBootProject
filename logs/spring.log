@@ -11768,3 +11768,612 @@ Caused by: java.nio.channels.ClosedChannelException
 2025-08-28T16:26:17.807+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-28T16:26:17.809+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2025-08-28T16:26:17.812+09:00  INFO 10304 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-08-28T16:37:51.597+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T16:37:51.602+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T16:37:51.637+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-28T16:37:51.637+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-28T16:37:52.366+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T16:37:52.423+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+2025-08-28T16:37:53.005+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T16:37:53.017+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T16:37:53.018+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T16:37:53.057+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T16:37:53.059+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1421 ms
+2025-08-28T16:37:53.240+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T16:37:53.287+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-28T16:37:53.315+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T16:37:53.512+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T16:37:53.539+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-08-28T16:37:53.597+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1c691ce3
+2025-08-28T16:37:53.599+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-08-28T16:37:53.621+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T16:37:53.636+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T16:37:54.256+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T16:37:54.399+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:37:54.613+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T16:37:55.038+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T16:37:55.057+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T16:37:55.425+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T16:37:55.460+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T16:37:55.465+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T16:37:55.523+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T16:37:55.534+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 4.27 seconds (process running for 4.811)
+2025-08-28T16:37:55.561+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T16:37:55.561+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T16:37:55.562+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T16:37:55.562+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T16:37:55.573+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T16:37:55.634+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T16:37:55.665+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T16:37:55.666+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T16:37:55.676+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T16:37:55.676+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T16:37:55.685+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 48
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 59
+2025-08-28T16:37:55.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T16:42:27.785+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-28T16:42:27.787+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-5] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T16:42:27.928+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T16:42:27.933+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:42:27.935+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-08-28T16:42:27.938+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-08-28T16:42:28.015+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T16:42:28.015+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T16:42:28.212+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T16:42:28.228+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 5 JPA repository interfaces.
+2025-08-28T16:42:28.275+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T16:42:28.275+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T16:42:28.276+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T16:42:28.292+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T16:42:28.292+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 275 ms
+2025-08-28T16:42:28.323+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T16:42:28.325+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T16:42:28.331+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T16:42:28.332+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-08-28T16:42:28.335+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@56b22e89
+2025-08-28T16:42:28.335+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-08-28T16:42:28.336+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T16:42:28.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T16:42:28.393+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T16:42:28.514+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:42:28.586+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T16:42:28.589+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T16:42:28.659+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T16:42:28.664+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T16:42:28.666+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T16:42:28.678+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T16:42:28.682+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.696 seconds (process running for 277.959)
+2025-08-28T16:42:28.684+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T16:42:28.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T16:42:28.689+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T16:42:28.689+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T16:42:28.697+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T16:42:28.698+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T16:42:28.699+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T16:42:28.699+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T16:42:28.699+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T16:42:28.699+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 46
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 43
+2025-08-28T16:42:28.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T16:42:28.702+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T16:49:11.144+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-28T16:49:11.146+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-7] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T16:49:11.288+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T16:49:11.291+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:49:11.291+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2025-08-28T16:49:11.293+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2025-08-28T16:49:11.366+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T16:49:11.366+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T16:49:11.566+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T16:49:11.583+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2025-08-28T16:49:11.634+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T16:49:11.635+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T16:49:11.635+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T16:49:11.655+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T16:49:11.656+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 289 ms
+2025-08-28T16:49:11.686+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T16:49:11.688+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T16:49:11.695+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T16:49:11.696+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2025-08-28T16:49:11.698+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@3c8d4f60
+2025-08-28T16:49:11.699+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2025-08-28T16:49:11.699+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T16:49:11.700+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T16:49:11.760+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T16:49:11.879+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T16:49:11.959+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T16:49:11.961+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T16:49:12.033+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T16:49:12.037+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T16:49:12.038+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T16:49:12.050+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T16:49:12.057+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.722 seconds (process running for 681.334)
+2025-08-28T16:49:12.058+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T16:49:12.060+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T16:49:12.062+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T16:49:12.063+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T16:49:12.072+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T16:49:12.072+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T16:49:12.073+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T16:49:12.073+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T16:49:12.073+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T16:49:12.073+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 17
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 24
+2025-08-28T16:49:12.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T16:49:12.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:01:56.702+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-28T17:01:56.703+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-11] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:01:56.867+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:01:56.870+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:01:56.870+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2025-08-28T17:01:56.872+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2025-08-28T17:01:56.949+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:01:56.949+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:01:57.139+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:01:57.152+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:01:57.265+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:01:57.266+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:01:57.266+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:01:57.287+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:01:57.288+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 338 ms
+2025-08-28T17:01:57.316+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:01:57.318+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:01:57.324+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:01:57.325+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2025-08-28T17:01:57.328+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@1b516866
+2025-08-28T17:01:57.328+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2025-08-28T17:01:57.329+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:01:57.329+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:01:57.390+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:01:57.532+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:01:57.609+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:01:57.612+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:01:57.675+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:01:57.678+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:01:57.679+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:01:57.690+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:01:57.695+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.775 seconds (process running for 1446.972)
+2025-08-28T17:01:57.696+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:01:57.698+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:01:57.701+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:01:57.701+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:01:57.709+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:01:57.709+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:01:57.710+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:01:57.710+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:01:57.710+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:01:57.710+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:01:57.710+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 93
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 75
+2025-08-28T17:01:57.711+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:01:57.713+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:01:59.127+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-28T17:01:59.128+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-15] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:01:59.274+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:01:59.276+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:01:59.277+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2025-08-28T17:01:59.278+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2025-08-28T17:01:59.361+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:01:59.362+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:01:59.540+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:01:59.557+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:01:59.612+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:01:59.613+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:01:59.613+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:01:59.634+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:01:59.634+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 271 ms
+2025-08-28T17:01:59.662+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:01:59.665+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:01:59.671+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:01:59.671+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2025-08-28T17:01:59.674+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@680cc315
+2025-08-28T17:01:59.674+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2025-08-28T17:01:59.675+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:01:59.675+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:01:59.735+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:01:59.878+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:01:59.955+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:01:59.958+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:02:00.034+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:02:00.037+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:02:00.038+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:02:00.048+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:02:00.053+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.721 seconds (process running for 1449.331)
+2025-08-28T17:02:00.054+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:02:00.055+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:02:00.055+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:02:00.055+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:02:00.055+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:02:00.058+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:02:00.061+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:02:00.061+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:02:00.072+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:02:00.072+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:02:00.075+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 40
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 38
+2025-08-28T17:02:00.076+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:02:00.078+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:02:17.363+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-28T17:02:17.364+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-19] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:02:17.500+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:02:17.502+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:02:17.502+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2025-08-28T17:02:17.503+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2025-08-28T17:02:17.570+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:02:17.570+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:02:17.713+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:02:17.725+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:02:17.765+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:02:17.766+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:02:17.766+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:02:17.779+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:02:17.779+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2025-08-28T17:02:17.799+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:02:17.801+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:02:17.805+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:02:17.805+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2025-08-28T17:02:17.807+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@4ed1c7fe
+2025-08-28T17:02:17.807+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2025-08-28T17:02:17.808+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:02:17.808+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:02:17.846+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:02:17.968+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:02:18.022+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:02:18.024+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:02:18.071+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:02:18.073+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:02:18.074+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:02:18.081+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:02:18.084+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.533 seconds (process running for 1467.362)
+2025-08-28T17:02:18.085+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:02:18.087+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:02:18.089+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:02:18.089+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:02:18.097+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:02:18.097+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 6
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:02:18.098+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 81
+2025-08-28T17:02:18.099+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:02:18.100+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:03:25.553+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-28T17:03:25.554+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-23] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:03:25.695+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:03:25.697+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:03:25.697+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2025-08-28T17:03:25.698+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2025-08-28T17:03:25.773+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:03:25.773+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:03:25.915+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:03:25.927+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:03:25.964+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:03:25.964+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:03:25.965+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:03:25.978+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:03:25.978+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2025-08-28T17:03:26.001+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:03:26.003+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:03:26.007+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:03:26.007+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2025-08-28T17:03:26.009+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@488015a9
+2025-08-28T17:03:26.009+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2025-08-28T17:03:26.010+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:03:26.010+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:03:26.058+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:03:26.191+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:03:26.251+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:03:26.253+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:03:26.302+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:03:26.305+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:03:26.306+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:03:26.317+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:03:26.320+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.569 seconds (process running for 1535.597)
+2025-08-28T17:03:26.321+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:03:26.324+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:03:26.326+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:03:26.326+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:03:26.334+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:03:26.335+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 30
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:03:26.336+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 65
+2025-08-28T17:03:26.337+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:03:26.338+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:05:45.143+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-28T17:05:45.144+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-27] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:05:45.283+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:05:45.285+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:05:45.285+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2025-08-28T17:05:45.287+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2025-08-28T17:05:45.361+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:05:45.361+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:05:45.493+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:05:45.505+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:05:45.541+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:05:45.541+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:05:45.542+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:05:45.555+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:05:45.555+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2025-08-28T17:05:45.576+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:05:45.577+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:05:45.581+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:05:45.582+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2025-08-28T17:05:45.584+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@42af1f44
+2025-08-28T17:05:45.584+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2025-08-28T17:05:45.584+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:05:45.585+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:05:45.627+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:05:45.752+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:05:45.807+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:05:45.809+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:05:45.853+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:05:45.855+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:05:45.856+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:05:45.864+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:05:45.869+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.529 seconds (process running for 1675.146)
+2025-08-28T17:05:45.870+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:05:45.872+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:05:45.874+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:05:45.874+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:05:45.881+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:05:45.881+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:05:45.882+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:05:45.883+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 88
+2025-08-28T17:05:45.883+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:05:45.883+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:05:45.883+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 92
+2025-08-28T17:05:45.883+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:05:45.884+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:07:22.337+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T17:07:22.337+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-28T17:07:22.338+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-08-28T17:23:49.386+09:00  INFO 5984 --- [MySpringBoot3Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-28T17:23:49.387+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-31] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:23:49.540+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:23:49.542+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:23:49.543+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2025-08-28T17:23:49.544+09:00  INFO 5984 --- [MySpringBoot3Project] [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2025-08-28T17:23:49.632+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 5984 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-28T17:23:49.634+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-28T17:23:49.909+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:23:49.925+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2025-08-28T17:23:49.970+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-28T17:23:49.970+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-28T17:23:49.971+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-28T17:23:49.988+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:23:49.988+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 353 ms
+2025-08-28T17:23:50.017+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:23:50.019+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-28T17:23:50.025+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:23:50.026+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2025-08-28T17:23:50.028+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@65773fcb
+2025-08-28T17:23:50.028+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2025-08-28T17:23:50.029+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:23:50.029+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T17:23:50.086+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:23:50.235+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:23:50.312+09:00  WARN 5984 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:23:50.314+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-28T17:23:50.382+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-28T17:23:50.385+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-28T17:23:50.386+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-28T17:23:50.397+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T17:23:50.401+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 0.794 seconds (process running for 2759.678)
+2025-08-28T17:23:50.401+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-28T17:23:50.401+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-28T17:23:50.402+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-28T17:23:50.402+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-28T17:23:50.402+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-28T17:23:50.405+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-28T17:23:50.407+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-28T17:23:50.407+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-28T17:23:50.415+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-28T17:23:50.415+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-28T17:23:50.416+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 81
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 21
+2025-08-28T17:23:50.417+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-28T17:23:50.419+09:00  INFO 5984 --- [MySpringBoot3Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-28T17:24:12.119+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T17:24:12.119+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-28T17:24:12.120+09:00  INFO 5984 --- [MySpringBoot3Project] [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2025-08-28T17:54:30.406+09:00  INFO 5984 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-28T17:54:30.558+09:00  INFO 5984 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-28T17:54:30.560+09:00  INFO 5984 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:54:30.560+09:00  INFO 5984 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2025-08-28T17:54:30.562+09:00  INFO 5984 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2025-08-29T13:28:34.357+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Starting MySpringBoot3ProjectApplication using Java 17.0.2 with PID 24020 (C:\mybackend\SpringBoot\MySpringBoot3Project\target\classes started by Jeong in C:\mybackend\SpringBoot\MySpringBoot3Project)
+2025-08-29T13:28:34.362+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : The following 1 profile is active: "prod"
+2025-08-29T13:28:34.396+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-29T13:28:34.396+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-29T13:28:35.188+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-29T13:28:35.246+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2025-08-29T13:28:35.780+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-08-29T13:28:35.790+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-29T13:28:35.791+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-29T13:28:35.827+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-29T13:28:35.828+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+2025-08-29T13:28:36.017+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-29T13:28:36.058+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-29T13:28:36.083+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-29T13:28:36.284+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-29T13:28:36.307+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-08-29T13:28:36.376+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@81c05e4
+2025-08-29T13:28:36.378+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-08-29T13:28:36.403+09:00  WARN 24020 --- [MySpringBoot3Project] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-29T13:28:36.423+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-29T13:28:37.046+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-29T13:28:37.171+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29T13:28:37.340+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-29T13:28:37.847+09:00  WARN 24020 --- [MySpringBoot3Project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-29T13:28:37.859+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-08-29T13:28:38.193+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-08-29T13:28:38.220+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-29T13:28:38.224+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-29T13:28:38.285+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-08-29T13:28:38.296+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.MySpringBoot3ProjectApplication    : Started MySpringBoot3ProjectApplication in 4.317 seconds (process running for 6.636)
+2025-08-29T13:28:38.337+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-08-29T13:28:38.338+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-08-29T13:28:38.338+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-08-29T13:28:38.338+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DatabaseRunner                   : DB Username = boot
+2025-08-29T13:28:38.346+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Starting data initialization...
+2025-08-29T13:28:38.395+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating departments...
+2025-08-29T13:28:38.429+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 4 departments
+2025-08-29T13:28:38.430+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Creating students...
+2025-08-29T13:28:38.438+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Created 8 students
+2025-08-29T13:28:38.439+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.DataInitRunner                   : Data initialization completed successfully
+2025-08-29T13:28:38.447+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : 현재 활성화된 CustomerVO Bean = CustomVO(mode=운영모드, rate=1.5)
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getName() = Spring PROD
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getAge() = 68
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : MyBootProperties.getFullName() = Spring PROD Boot
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.name = Spring PROD
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.age = 84
+2025-08-29T13:28:38.448+09:00  INFO 24020 --- [MySpringBoot3Project] [restartedMain] c.r.m.r.MyPropsRunner                    : Properties myboot.fullName = Spring PROD Boot
+2025-08-29T13:32:37.419+09:00  INFO 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-29T13:32:37.420+09:00  INFO 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-29T13:32:37.421+09:00  INFO 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-08-29T13:36:21.033+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:31.150+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:31.646+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:32.120+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:32.279+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:39.470+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:45.244+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:36:52.507+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:38:17.094+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:43:29.367+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T13:45:24.536+09:00  WARN 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rookies4.myspringboot.controller.dto.StudentDTO$Response> com.rookies4.myspringboot.controller.StudentController.createStudent(com.rookies4.myspringboot.controller.dto.StudentDTO$Request): [Field error in object 'request' on field 'departmentId': rejected value [null]; codes [NotNull.request.departmentId,NotNull.departmentId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [request.departmentId,departmentId]; arguments []; default message [departmentId]]; default message [Department ID is required]] ]
+2025-08-29T14:16:17.026+09:00  INFO 24020 --- [MySpringBoot3Project] [http-nio-8080-exec-6] o.a.c.h.Http11Processor                  : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x030xa10xb6~Q0x91/MQg0xdd0xae0xe70xb90xdbs0xb10xc30xcc0xa9BA0xed0x000x1c0xc5U0xb5h0xc30x860xb60xeb0x000x000x1a0xc0/0xc0+0xc00x110xc00x070xc00x130xc00x090xc00x140xc00x0a0x000x050x00/0x0050xc00x120x000x0a0x010x000x0040x000x050x000x050x010x000x000x000x000x000x0a0x000x080x000x060x000x170x000x180x000x190x000x0b0x000x020x010x000x000x0d0x000x100x000x0e0x040x010x040x030x020x010x020x030x040x010x050x010x060x010xff0x010x000x010x00...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+
+2025-08-29T15:45:12.299+09:00  INFO 24020 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29T15:45:12.660+09:00  INFO 24020 --- [MySpringBoot3Project] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-29T15:45:12.667+09:00  INFO 24020 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29T15:45:12.671+09:00  INFO 24020 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-08-29T15:45:12.675+09:00  INFO 24020 --- [MySpringBoot3Project] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
